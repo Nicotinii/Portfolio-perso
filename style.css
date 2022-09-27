@@ -1,9 +1,17 @@
-html{
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+html {
     background: rgb(230, 230, 230);
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
-    width: 100%;
-    overflow-x: hidden;
+}
+
+
+h2 {
+    font-size: 400%;
 }
 
 
@@ -11,9 +19,11 @@ html{
 ::-webkit-scrollbar {
     width: 10px;
 }
+
 ::-webkit-scrollbar-track {
     background: #a1a1a1;
 }
+
 ::-webkit-scrollbar-thumb {
     background: #5659EC;
 }
@@ -24,34 +34,36 @@ html{
 
 
 /* Barre de navigation ##################################################################################################################################################*/
-.navbar{
+.navbar {
+
     position: fixed;
-    width: 98%;
+    width: 100%;
+    padding: 2% 0% 2% 0%;
     z-index: 2;
-    margin-left: -1%;
     transition: all 0.3s ease;
-    padding: 2% 2%;
-    background: #181BC4;
-    
+    background: #3f3f57;
+
 }
 
-.navbar .max-width{
+.navbar .max-width {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-right: 2%;
 }
-.navbar .logo a{
+
+.navbar .logo a {
     color: rgb(0, 0, 0);
     font-size: 200%;
     font-weight: 600;
-    text-decoration:none;
+    text-decoration: none;
 }
-.navbar .logo a span{
+
+.navbar .logo a span {
     color: #ffffff;
     transition: all 0.3s ease;
 }
-.navbar .menu li{
+
+.navbar .menu li {
     display: flex;
     justify-content: flex-end;
     list-style: none;
@@ -60,29 +72,30 @@ html{
 
 }
 
-.navbar .menu li a{
+.navbar .menu li a {
     display: flex;
     color: rgb(255, 255, 255);
     font-size: 100%;
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s ease;
-    text-decoration:none;
+    text-decoration: none;
 }
 
 
 /* bouton menu ##################################################################################################################################################*/
-.menu-btn{
+.menu-btn {
     color: #fff;
     font-size: 23px;
     cursor: pointer;
     display: none;
 }
-.scroll-up-btn{
+
+.scroll-up-btn {
     position: fixed;
     height: 45px;
     width: 42px;
-    background: #181BC4;
+    background: #3f3f57;
     right: 30px;
     bottom: 10px;
     text-align: center;
@@ -97,114 +110,135 @@ html{
     pointer-events: none;
     transition: all 0.3s ease;
 }
-.scroll-up-btn.show{
+
+.scroll-up-btn.show {
     bottom: 30px;
     opacity: 1;
     pointer-events: auto;
 }
-.scroll-up-btn:hover{
+
+.scroll-up-btn:hover {
     filter: brightness(90%);
 }
 
 
 /* Section page d'accueil  ##################################################################################################################################################*/
-.home{
+.home {
     display: flex;
     background: url("/images/banner.jpg") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
-    width: 102%;
-    margin-left: -1%;
-    margin-top: -1%;
+    width: 100%;
     padding-bottom: 20%;
 
 }
-.home .max-width{
+
+.home .max-width {
     width: 100%;
     display: flex;
 }
 
-.home .home-content{
+.home .home-content {
     margin-left: 10%;
     margin-top: 20%;
-  }
-
-.home .text-1{
-    font-size: 200%;
-    
 }
-.home .text-2{
+
+.home .text-1 {
+    font-size: 200%;
+
+}
+
+.home .text-2 {
     font-size: 500%;
     font-weight: 600;
 }
-.home .text-3{
+
+.home .text-3 {
     font-size: 250%;
     margin: 5px 0;
 }
-.home .text-3 span{/*text typing */
-    color: #181BC4; 
+
+.home .text-3 span {
+    /*text typing */
+    color: #3f3f57;
     font-weight: 500;
-    
+
 }
-.home a{  /*bouton */
+
+.home a {
+    /*bouton */
     display: inline-block;
-    background: #181BC4;
+    background: #3f3f57;
     color: #fff;
     font-size: 150%;
     padding: 2% 7%;
     margin-top: 5%;
     font-weight: 400;
     border-radius: 6px;
-    border: 2px solid #181BC4;
+    border: 2px solid #3f3f57;
     transition: all 0.5s ease;
-    text-decoration:none;
+    text-decoration: none;
 
 }
-.home a:hover{
-    color: #181BC4;
+
+.home a:hover {
+    color: #3f3f57;
     background: none;
 }
 
-
-/* A propos section ##################################################################################################################################################*/
-
-.about{
-    display: flex;
-    padding-top: 10%;
-    padding-bottom: 100%;
-
+.projet {
+    padding: 3% 2% 10% 5%;
+    background: #3f3f57;
 }
 
-.about .left{
+.row-projet {
+    padding-top: 5%;
     display: flex;
-
+    flex-direction: row;
 }
 
-
-.about .right{
-    display: flex;
-
+.pr1,
+.pr2,
+.pr3 {
+    width: 30%;
 }
-/* bas de pages ##################################################################################################################################################*/
-footer{
-    background: #3b3b3b;
-    padding: 2% 2%;
-    color: #fff;
-    text-align: center;
-    margin-left: -1%;
-    margin-bottom: -1%;
+
+.primg {
     width: 100%;
 }
-footer span a{
-    color: #181BC4;
+
+
+.prtxt {
+    text-align: center;
+}
+
+
+
+
+
+/* bas de pages ##################################################################################################################################################*/
+footer {
+    width: 100%;
+    overflow: hidden;
+}
+
+footer span a {
+    color: #4547a3;
     text-decoration: none;
 }
-footer span a:hover{
+
+footer span a:hover {
     text-decoration: underline;
 }
-  
+
+.create {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #00013d;
+    padding: 5%;
+    margin-top: -1%;
+    color: #ffffff;
 
 
-
-
-
+}
