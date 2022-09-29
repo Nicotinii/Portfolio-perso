@@ -1,0 +1,82 @@
+.skills {
+    padding: 3% 2% 10% 5%;
+    background: linear-gradient(180deg, rgb(225, 177, 44) 0%, rgba(230, 230, 230, 1) 100%);
+}
+
+.skills-content {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+@keyframes load {
+    from {
+        width: 0%
+    }
+}
+
+@-webkit-keyframes load {
+    from {
+        width: 0%
+    }
+}
+
+@-moz-keyframes load {
+    from {
+        width: 0%
+    }
+}
+
+@-o-keyframes load {
+    from {
+        width: 0%
+    }
+}
+
+.bar {
+    background-color: rgba(61, 50, 34, 0.205);
+    padding: 0%;
+    border-radius: 15px;
+    margin-bottom: 2%;
+    font-size: 14px;
+    color: #FFF;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.219);
+}
+
+.bar::before {
+    content: attr(data-skill);
+    display: inline-block;
+    padding: 2%;
+    border-radius: inherit;
+    animation: load 10s 2s;
+    -webkit-animation: load 10s 2s;
+    -moz-animation: load 10s 2s;
+    -o-animation: load 10s 2s;
+    box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.13);
+}
+
+.bar.sk::before {
+    background-color: #00acff;
+    width: calc(80% - 10px);
+}
+
+.bar.ski::before {
+    background-color: #ff9a00;
+    width: calc(75% - 10px);
+}
+
+.bar.skil::before {
+    background-color: #0096dc;
+    width: calc(55% - 10px);
+}
+
+.bar.skill::before {
+    background-color: #ff5722;
+    width: calc(65% - 10px);
+}
+
+.barre {
+    width: 10%;
+}

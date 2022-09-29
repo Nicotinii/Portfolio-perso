@@ -1,0 +1,46 @@
+.projet {
+    padding: 3% 2% 10% 5%;
+    background: #e1b12c;
+}
+
+.row-projet {
+    padding-top: 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+.pr1,
+.pr2,
+.pr3 {
+    width: 30%;
+
+}
+
+.primg {
+    width: 100%;
+    border-radius: 50px;
+    transition: 1s;
+}
+
+.primg:hover {
+    width: 100%;
+    filter: saturate(5);
+    border-bottom-right-radius: 300px;
+    border-top-left-radius: 300px;
+    transition: filter 5s, border-top-left-radius 5s, border-bottom-right-radius 2s;
+}
+
+.prtitle a {
+    font-size: 2.5em;
+    text-decoration: none;
+    color: black;
+}
+
+.prtxt {
+    font-size: 1.5em;
+
+}
+
+.prtxt {
+    text-align: center;
+}

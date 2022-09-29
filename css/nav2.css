@@ -1,3 +1,56 @@
+/* Barre de navigation pc ##################################################################################################################################################*/
+.navbar {
+
+    position: fixed;
+    width: 100%;
+    padding: 2% 0% 2% 0%;
+    z-index: 2;
+    transition: all 0.3s ease;
+    background: #e1b12c;
+
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    color: rgb(0, 0, 0);
+    font-size: 200%;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.navbar .logo a span {
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.navbar .menu li {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    display: inline-block;
+    border-right: 10%;
+
+}
+
+.navbar .menu li a {
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-size: 100%;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+
+
+
+
 #navigation {
     visibility: hidden;
     height: 0px;

@@ -2,8 +2,8 @@
 
 .about {
     padding: 3% 2% 10% 5%;
-    background: rgb(63, 63, 87);
-    background: linear-gradient(0deg, rgba(63, 63, 87, 1) 0%, rgba(230, 230, 230, 1) 30%);
+    background: rgb(225, 177, 44);
+
 
 }
 
@@ -18,11 +18,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .image img {
     width: 70%;
     border-radius: 50%;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.479);
+    transition: 5s;
+
+}
+
+.image img:hover {
+    width: 70%;
+    border-radius: 50%;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.479);
+    rotate: 360deg;
+    transition: 5s;
 
 }
 
