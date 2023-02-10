@@ -1,2 +1,4 @@
-Portfolio-perso
-De début de formation non mis a jour depuis !!!
+# Portfolio de début de formation
+
+Ceci est un portfolio qui a été produit dans les premières semaines de ma formation.
+
